@@ -2,7 +2,7 @@ class InvalidPhone(Exception):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         self.code = 400
-        self.message = {'error': 'phone must follow this format: (xx)xxxxx-xxxx'}
+        self.message = {'error': 'Phone must follow this format: (xx)xxxxx-xxxx'}
 
 
 class InvalidValue(Exception):
@@ -15,4 +15,4 @@ class NothingHere(Exception):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         self.code = 200
-        self.message = []
+        self.message = {"message":"There's nothing here"}
